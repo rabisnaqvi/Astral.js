@@ -30,10 +30,12 @@ jobs:
           npm ci
       - name: lint
         run: npm run lint
+      - name: format
+        run: npm run format
       - name: build
         run: npm run build
       - name: test
-        run: jest --coverage && coveralls < coverage/lcov.info
+        run: npm run test
       - name: docs
         run: npm run docs
       - name: Coveralls
