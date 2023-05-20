@@ -12,7 +12,6 @@ To ensure a smooth collaboration and maintain a high-quality codebase, please fo
 - [Contributing Guidelines](#contributing-guidelines)
     - [Bug Reports](#bug-reports)
     - [Feature Requests](#feature-requests)
-    - [Pull Requests](#pull-requests)
 - [Code Style](#code-style)
 - [License](#license)
 
@@ -23,7 +22,7 @@ To ensure a smooth collaboration and maintain a high-quality codebase, please fo
 Before you start contributing to Astral.js, make sure you have it installed. You can install it using npm:
 
 ```bash
-npm install astral
+npm install astral.js
 ```
 
 ### Development Setup
@@ -89,7 +88,7 @@ If you have a suggestion for a new feature or improvement in Astral.js, we'd lov
 4. If applicable, include any supporting information such as code snippets, diagrams, or examples.
 5. Submit the issue, and we'll review it as soon as possible.
 
-### Code Style
+## Code Style
 
 To maintain a consistent code style throughout the project, we use ESLint and Prettier. Before submitting a pull request, please ensure that your code adheres to the linting rules and passes all tests. You can run the following command to check your code:
 

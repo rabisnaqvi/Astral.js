@@ -74,7 +74,7 @@ export default (function () {
    * @memberof! Astral.context
    */
   function _initState(key, val) {
-    if (typeof store[key] !== 'undefined') throw Error('State already initialized');
+    if (typeof store[key] !== 'undefined') throw Error('Astral.context: State already initialized');
     store[key] = null;
     _debugLog('State: ' + key + '\nValue: ' + val + '\nAction: Initialized');
     updateState(key, val);

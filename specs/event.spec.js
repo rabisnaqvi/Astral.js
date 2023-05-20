@@ -3,6 +3,7 @@ import eventService from './../src/event';
 describe('EventService', () => {
   afterEach(() => {
     eventService.unsubscribeAll();
+    eventService.setDebugMode(false);
   });
 
   it('should publish a specific event and trigger subscribed callbacks', () => {

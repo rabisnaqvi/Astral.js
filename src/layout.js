@@ -201,20 +201,20 @@ export default (function () {
    * @returns {void}
    */
   (function _setupResizeEvents() {
-    const windowObj = window;
+    window.addEventListener('resize', _publishResizeEvents);
 
-    windowObj.addEventListener('resize', _publishResizeEvents);
-
-    if (windowObj.screen && windowObj.screen.orientation) {
-      windowObj.screen.orientation.addEventListener('change', _publishOrientationChangeEvents);
-    } else if (windowObj.matchMedia) {
+    if (window.screen && window.screen.orientation) {
+      window.screen.orientation.addEventListener('change', function () {
+        _publishOrientationChangeEvents();
+      });
+    } else if (window.matchMedia) {
       /**
        * Handle outdated browsers, especially iOS Safari
        * The following code is outdated, and deprecated in most modern browsers
        * but is need to handle ios side of things regarding window orientation change.
        * mql = media query language
        */
-      const mql = windowObj.matchMedia('(orientation: portrait)');
+      const mql = window.matchMedia('(orientation: portrait)');
       _publishOrientationChangeEvents();
 
       mql.addListener(function () {
@@ -228,7 +228,8 @@ export default (function () {
   }
 
   function _publishOrientationChangeEvents() {
-    event.publish(ASTRAL_LAYOUT_EVENTS.ORIENTATION_CHANGE, getOrientation());
+    const orientation = getOrientation();
+    event.publish(ASTRAL_LAYOUT_EVENTS.ORIENTATION_CHANGE, orientation);
   }
 
   function _resizeCallback(callback) {
@@ -272,10 +273,9 @@ export default (function () {
    * @returns {WindowSize} Window size
    */
   function getWindowSize() {
-    const windowObj = window;
     return {
-      WIDTH: windowObj.innerWidth,
-      HEIGHT: windowObj.innerHeight,
+      WIDTH: window.innerWidth,
+      HEIGHT: window.innerHeight,
     };
   }
 
@@ -286,12 +286,12 @@ export default (function () {
    * @public
    * @example Astral.layout.getBreakpointFromLabel(Astral.layout.getBreakpointLabels().ExtraLarge);
    * @returns {Breakpoint} Breakpoint
-   * @throws {Error} No breakpoint found for screen size
+   * @throws {Error} No breakpoint found for label: <breakpoint>
    */
   function getBreakpointFromLabel(breakpoint) {
     const match = config.breakpoints[breakpoint];
     if (match) return match;
-    throw new Error('Astral: No breakpoint found for label: ' + breakpoint);
+    throw new Error('Astral.layout: No breakpoint found for label: ' + breakpoint);
   }
 
   /**
@@ -304,18 +304,15 @@ export default (function () {
    * @throws {Error} No breakpoint found for screen size
    */
   function getBreakpoint(screenSize) {
-    let matchedResolution;
     for (const breakpoint in config.breakpoints) {
       const resObj = config.breakpoints[breakpoint];
       if (screenSize.WIDTH >= resObj.minWidth && screenSize.WIDTH <= resObj.maxWidth) {
         if (screenSize.HEIGHT >= resObj.minHeight) {
-          matchedResolution = resObj;
-          return matchedResolution;
+          return resObj;
         }
       }
     }
-    if (matchedResolution) return matchedResolution;
-    throw new Error('Astral: No breakpoint found for screen size: ' + screenSize.WIDTH + 'x' + screenSize.HEIGHT);
+    throw new Error('Astral.layout: No breakpoint found for screen size: ' + screenSize.WIDTH + 'x' + screenSize.HEIGHT);
   }
 
   /**
@@ -326,18 +323,20 @@ export default (function () {
    * @returns {Orientation} Orientation
    */
   function getOrientation() {
-    const windowObj = window;
-    if (windowObj.screen && windowObj.screen.orientation) {
-      return windowObj.screen.orientation.type;
-    } else if (windowObj.matchMedia) {
-      const mql = windowObj.matchMedia('(orientation: portrait)');
-      if (mql.matches) {
-        return 'portrait';
+    try {
+      return window.screen.orientation.type;
+    } catch (e) {
+      if (window.matchMedia) {
+        const mql = window.matchMedia('(orientation: portrait)');
+        if (mql.matches) {
+          return 'portrait';
+        } else {
+          return 'landscape';
+        }
       } else {
-        return 'landscape';
+        throw new Error('Astral.layout: No orientation found', e);
       }
     }
-    return null;
   }
 
   /**
@@ -356,9 +355,10 @@ export default (function () {
    */
   // TODO: we need to make this function more sophisticated
   function applyIf(callbackSuccess, callbackFail, conditions, areAllConditionsNecessary) {
-    if (!conditions || conditions.length === 0 || !callbackSuccess) throw new Error('Astral: No conditions or callbackSuccess provided');
+    if (!conditions || conditions.length === 0 || !callbackSuccess)
+      throw new Error('Astral.layout: No conditions or callbackSuccess provided');
 
-    function _AstralJsMediaQuery(breakpoint) {
+    function _AstralJsMediaQuery() {
       let isMatched = false;
 
       for (let index = 0; index < conditions.length; index++) {
@@ -387,7 +387,12 @@ export default (function () {
 
             case '=':
             default:
-              if (breakpoint == matchedBreakpoint) conditionMatched = true;
+              if (
+                windowSize.WIDTH >= matchedBreakpoint.minWidth &&
+                windowSize.WIDTH <= matchedBreakpoint.maxWidth &&
+                windowSize.HEIGHT >= matchedBreakpoint.minHeight
+              )
+                conditionMatched = true;
               break;
           }
         }

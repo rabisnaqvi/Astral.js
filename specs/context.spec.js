@@ -7,7 +7,6 @@ describe('ContextService', () => {
 
   it('getState should initialize and return the state', () => {
     const stateKey = 'myState';
-    const stateValue = 'myValue';
 
     const state = ContextService.getState(stateKey);
 
