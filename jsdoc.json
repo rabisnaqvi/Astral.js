@@ -1,0 +1,15 @@
+{
+  "source": {
+    "include": ["./src"],
+    "exclude": ["./node_modules"]
+  },
+  "plugins": [],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+  "opts": {
+    "recurse": true,
+    "destination": "./docs"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "prettier", "import"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021, // Specify the ECMAScript version you are using (ES2021 or later)
+    "sourceType": "module" // Specify the source type as 'module'
+  },
+  "env": {
+    "browser": true // Add the 'browser' environment setting
+  }
+}
