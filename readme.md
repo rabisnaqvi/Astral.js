@@ -1,7 +1,7 @@
-# Astral.js
+# ![Astral Icon](https://github.com/rabisnaqvi/Astral.js/blob/main/assets/astral-icon.png) Astral.js
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![npm](https://img.shields.io/npm/v/your-library-name.svg)](https://www.npmjs.com/package/astral.js)
+[![npm](https://img.shields.io/npm/v/astral.js.svg)](https://www.npmjs.com/package/astral.js)
 [![Coverage Status](https://coveralls.io/repos/github/rabisnaqvi/Astral.js/badge.svg)](https://coveralls.io/github/rabisnaqvi/Astral.js)
 
 Astral.js is a lightweight UI toolkit designed to empower JavaScript developers with powerful tools for building modern user interfaces. With Astral.js, you gain access to a comprehensive set of features including context and state management, event-driven architecture, and sophisticated JavaScript-powered media queries.
