@@ -5,9 +5,28 @@ Astral.js is an open-source project developed and maintained by a community of d
 ## Financial Contributions
 
 If you find Astral.js valuable and would like to make a financial contribution to support the project, you can do so through the following channels:
-
+<!--
 - [GitHub Sponsors](https://github.com/sponsors/rabisnaqvi): You can sponsor individual contributors directly through their GitHub profiles. By sponsoring, you will receive recognition and exclusive benefits as a token of appreciation.
 - [Open Collective](https://opencollective.com/astraljs): You can contribute to our Open Collective to support the project as a whole. Your contributions will be used to cover project-related expenses such as hosting, domain registration, and community initiatives.
+-->
+- **Direct Transfers**: You can sponsor the project and help the ongoing development by directly transferring the donations to the following account details:
+  - Inside US:
+    - Account holder: Syed Rabis Haider Naqvi
+    - ACH and Wire routing number: 084009519
+    - Account number: 9600013813067475
+    - Account type: Checking
+    - Wise's address: 30 W. 26th Street, Sixth Floor
+      New York NY 10010
+      United States
+  - Outside US:
+    - Account holder: Syed Rabis Haider Naqvi
+    - Routing number: 026073150
+    - SWIFT/BIC: CMFGUS33
+    - Account number: 8313284270
+    - Wise's address: 30 W. 26th Street, Sixth Floor
+      New York NY 10010
+      United States
+- **Wise Transfer**: If you have a wise account, you can also directly fund the project by transferring your donations to this email: rabisnaqvi2@gmail.com.
 
 All financial contributions, regardless of the channel, will be used transparently and responsibly to support the development and maintenance of Astral.js.
 
