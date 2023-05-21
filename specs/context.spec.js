@@ -60,4 +60,23 @@ describe('ContextService', () => {
     // Verify the onchange callback has been called with the previous and new state values
     expect(onChangeCallback).toHaveBeenCalledWith(prevState, newState);
   });
+
+  it('should update multiple states when an object is passed in the updateState method', () => {
+    const stateKey1 = 'myState1';
+    const stateKey2 = 'myState2';
+    const stateValue1 = 'myValue1';
+    const stateValue2 = 'myValue2';
+
+    // Initialize the states
+    ContextService.updateState({
+      [stateKey1]: stateValue1,
+      [stateKey2]: stateValue2,
+    });
+
+    const state1 = ContextService.getState(stateKey1);
+    const state2 = ContextService.getState(stateKey2);
+
+    expect(state1.value).toBe(stateValue1);
+    expect(state2.value).toBe(stateValue2);
+  });
 });

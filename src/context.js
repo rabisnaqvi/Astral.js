@@ -102,15 +102,35 @@ export default (function () {
    * @name updateState
    * @returns {void}
    * @public
-   * @param {String} key
-   * @param {*} val
+   * @param {String|Object} key - The key of the state to update, or an object containing key-value pairs to update multiple states.
+   * @param {*} val - The value to update the state with (only applicable when key is a string).
    * @memberof! Astral.context
-   * @example Astral.context.updateState("myState", "myValue");
+   * @example
+   * // Update a single state
+   * Astral.context.updateState("myState", "myValue");
+   *
+   * // Update multiple states using an object
+   * Astral.context.updateState({
+   *   state1: value1,
+   *   state2: value2,
+   * });
    */
   function updateState(key, val) {
-    if (typeof store[key] === 'undefined') _initState(key, null);
+    if (typeof key === 'object' && key !== null) {
+      // Update multiple states using an object
+      for (const stateKey in key) {
+        updateState(stateKey, key[stateKey]);
+      }
+      return;
+    }
+
+    if (typeof store[key] === 'undefined') {
+      _initState(key, null);
+    }
+
     var prevState = store[key];
     store[key] = val;
+
     _debugLog('State: ' + key + '\nValue: ' + val + '\nAction: Updated');
     event.publish('ASTRAL_CONTEXT_UPDATED_INTERNAL_' + key, {
       prevState: prevState,
