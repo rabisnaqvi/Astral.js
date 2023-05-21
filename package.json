@@ -1,6 +1,6 @@
 {
   "name": "astral.js",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Astral.js is a lightweight UI toolkit designed to empower JavaScript developers with powerful tools for building modern user interfaces. With Astral.js, you gain access to a comprehensive set of features including context and state management, event-driven architecture, and sophisticated JavaScript-powered media queries.",
   "main": "src/index.js",
   "scripts": {
