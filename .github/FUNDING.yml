@@ -1,0 +1,17 @@
+wise:
+  direct_transfer:
+    inside_us:
+      account_holder_name: Syed Rabis Haider Naqvi
+      ach_wire_routing_number: 084009519
+      account_number: 9600013813067475
+      account_type: Checking
+      address: 30 W. 26th Street, Sixth Floor, New York NY 10010, United States
+    outside_us:
+      account_holder: Syed Rabis Haider Naqvi
+      routing_number: 026073150
+      swift_bic: CMFGUS33
+      account_number: 8313284270
+      address: 30 W. 26th Street, Sixth Floor, New York NY 10010, United States
+  wise_transfer:
+    email_address: rabisnaqvi2@gmail.com
+
