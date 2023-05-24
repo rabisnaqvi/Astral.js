@@ -2,6 +2,7 @@ name: CI
 
 on:
   push:
+    branches: [main, release-candidate]
   pull_request:
     types: ['opened', 'reopened', 'synchronize', 'edited']
 
@@ -39,6 +40,3 @@ jobs:
         run: npm run docs
       - name: Coveralls
         uses: coverallsapp/github-action@v2
-        with:
-            github-token: ${{ secrets.GITHUB_TOKEN }}
-            path-to-lcov: coverage/lcov.info
