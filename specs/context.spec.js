@@ -8,9 +8,9 @@ describe('ContextService', () => {
   it('getState should initialize and return the state', () => {
     const stateKey = 'myState';
 
-    const state = ContextService.getState(stateKey);
+    const [stateValue] = ContextService.getState(stateKey);
 
-    expect(state.value).toBeNull();
+    expect(stateValue).toBeNull();
   });
 
   it('getState should return the existing state', () => {
@@ -20,9 +20,9 @@ describe('ContextService', () => {
     // Initialize the state
     ContextService.updateState(stateKey, stateValue);
 
-    const state = ContextService.getState(stateKey);
+    const [state] = ContextService.getState(stateKey);
 
-    expect(state.value).toBe(stateValue);
+    expect(state).toBe(stateValue);
   });
 
   it('getState should trigger onchange callback upon state change', () => {
@@ -31,8 +31,8 @@ describe('ContextService', () => {
 
     const onChangeCallback = jest.fn();
 
-    const state = ContextService.getState(stateKey);
-    state.onchange(onChangeCallback);
+    const [_, onStateChange] = ContextService.getState(stateKey);
+    onStateChange(onChangeCallback);
 
     // Update the state value
     ContextService.updateState(stateKey, stateValue);
@@ -51,8 +51,8 @@ describe('ContextService', () => {
 
     const onChangeCallback = jest.fn();
 
-    const state = ContextService.getState(stateKey);
-    state.onchange(onChangeCallback);
+    const [_, onStateChange] = ContextService.getState(stateKey);
+    onStateChange(onChangeCallback);
 
     // Update the state value
     ContextService.updateState(stateKey, newState);
@@ -73,10 +73,10 @@ describe('ContextService', () => {
       [stateKey2]: stateValue2,
     });
 
-    const state1 = ContextService.getState(stateKey1);
-    const state2 = ContextService.getState(stateKey2);
+    const [state1value] = ContextService.getState(stateKey1);
+    const [state2value] = ContextService.getState(stateKey2);
 
-    expect(state1.value).toBe(stateValue1);
-    expect(state2.value).toBe(stateValue2);
+    expect(state1value).toBe(stateValue1);
+    expect(state2value).toBe(stateValue2);
   });
 });

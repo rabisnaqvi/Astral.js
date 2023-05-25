@@ -8,21 +8,22 @@ import event from './event';
  * @example Astral.context.updateState("myState", "myValue");
  * @example Astral.context.setDebugMode(true);
  * @example Astral.context.setDebugMode(false);
- * @example Astral.context.getState("myState").onchange(function(prevState, newState) { console.log(prevState, newState) });
- * @example Astral.context.getState("myState").value;
+ * @example
+ * var [value, onchange] = Astral.context.getState("myState");
+ * onchange(function(prevState, newState) { console.log(prevState, newState) });
  * @memberof! Astral
  * @public
  */
 export default (function () {
   /**
-   * @typedef {Object} State
+   * @typedef {Array} State
    * @property {function} onchange - Callback function to trigger upon state change
    * @property {*} value - Current state value
    * @memberof! Astral.context
    * @public
-   * @example Astral.context.getState("myState");
-   * @example Astral.context.getState("myState").onchange(function(prevState, newState) { console.log(prevState, newState) });
-   * @example Astral.context.getState("myState").value;
+   * @example
+   * var [value, onchange] = Astral.context.getState("myState");
+   * onchange(function(prevState, newState) { console.log(prevState, newState) });
    */
 
   /**
@@ -31,8 +32,9 @@ export default (function () {
    * @property {*} newState - New state value
    * @memberof! Astral.context
    * @public
-   * @example Astral.context.getState("myState");
-   * @example Astral.context.getState("myState").onchange(function(prevState, newState) { console.log(prevState, newState) });
+   * @example
+   * var [value, onchange] = Astral.context.getState("myState");
+   * onchange(function(prevState, newState) { console.log(prevState, newState) });
    */
 
   /**
@@ -40,7 +42,9 @@ export default (function () {
    * @property {function} onchange - Callback function to trigger upon state change
    * @memberof! Astral.context
    * @public
-   * @example Astral.context.getState("myState").onchange(function(prevState, newState) { console.log(prevState, newState) });
+   * @example
+   * var [value, onchange] = Astral.context.getState("myState");
+   * onchange(function(prevState, newState) { console.log(prevState, newState) });
    */
 
   /**
@@ -51,17 +55,16 @@ export default (function () {
    * @name store
    */
 
-  /**
-   * @desc Debug mode
-   * @memberof! Astral.context
-   * @private
-   * @type {Boolean}
-   * @name _debugMode
-   * @default false
-   */
-
   // initialize store and debug mode
   var store = {},
+    /**
+     * @desc Debug mode
+     * @memberof! Astral.context
+     * @private
+     * @type {Boolean}
+     * @name _debugMode
+     * @default false
+     */
     _debugMode = false;
 
   /**
@@ -86,9 +89,9 @@ export default (function () {
    * @param {String} key State key
    * @public
    * @memberof! Astral.context
-   * @example Astral.context.getState("myState");
-   * @example Astral.context.getState("myState").onchange(function(prevState, newState) { console.log(prevState, newState) });
-   * @example Astral.context.getState("myState").value;
+   * @example
+   * var [value, onchange] = Astral.context.getState("myState");
+   * onchange(function(prevState, newState) { console.log(prevState, newState) });
    * @returns {State}
    */
   function getState(key) {
@@ -190,12 +193,12 @@ export default (function () {
    * @property {function} getState - Get a state
    * @property {function} updateState - Update a state
    * @property {function} setDebugMode - Set debug mode
-   * @example Astral.context.getState("myState");
+   * @example
+   * var [value, onchange] = Astral.context.getState("myState");
+   * onchange(function(prevState, newState) { console.log(prevState, newState) });
    * @example Astral.context.updateState("myState", "myValue");
    * @example Astral.context.setDebugMode(true);
    * @example Astral.context.setDebugMode(false);
-   * @example Astral.context.getState("myState").onchange(function(prevState, newState) { console.log(prevState, newState) });
-   * @example Astral.context.getState("myState").value;
    */
 
   return {
