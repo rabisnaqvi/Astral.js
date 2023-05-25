@@ -94,7 +94,7 @@ export default (function () {
   function getState(key) {
     if (typeof store[key] === 'undefined') _initState(key, null);
     var listener = new ListenerConstructor(key);
-    return { value: store[key], onchange: listener };
+    return [store[key], listener];
   }
 
   /**
