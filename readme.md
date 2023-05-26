@@ -48,7 +48,7 @@ Or use a CDN:
 
 # Getting Started
 
-After making sure that Astral.js is available in modules, we can start looking into how we can actually use it. But before we dive into the code, it’s a good measure to take a look at the [Core Concepts](#core_concepts) section of the documentation if you haven’t done already or are not up to date with the recent updates in the features. Once you are confident about your knowledge of the core concepts, we can dive into the practical usage of Astral.js.
+After making sure that Astral.js is available in modules, we can start looking into how we can actually use it. But before we dive into the code, it’s a good measure to take a look at the [Core Concepts](#core-concepts) section of the documentation if you haven’t done already or are not up to date with the recent updates in the features. Once you are confident about your knowledge of the core concepts, we can dive into the practical usage of Astral.js.
 
 Here we are going to divide the usage into 3 different sections, covering the use of the Event, Context, and Layout functionalities respectively.
 
