@@ -48,7 +48,7 @@ Or use a CDN:
 
 # Getting Started
 
-After making sure that Astral.js is available in modules, we can start looking into how we can actually use it. But before we dive into the code, it’s a good measure to take a look at the [Core Concepts](#core_concepts) section of the documentation if you haven’t done already or are not up to date with the recent updates in the features. Once you are confident about your knowledge of the core concepts, we can dive into the practical usage of Astral.js.
+After making sure that Astral.js is available in modules, we can start looking into how we can actually use it. But before we dive into the code, it’s a good measure to take a look at the [Core Concepts](#core-concepts) section of the documentation if you haven’t done already or are not up to date with the recent updates in the features. Once you are confident about your knowledge of the core concepts, we can dive into the practical usage of Astral.js.
 
 Here we are going to divide the usage into 3 different sections, covering the use of the Event, Context, and Layout functionalities respectively.
 
@@ -63,6 +63,7 @@ At its core Astral.event is a utility, that provides the ability for you to subs
 Let’s make sure we are clear about the terminologies here:
 
 **Subscribers:** These are the callback functions that listen for a specific event to be triggered in the application. Once that event is triggered, the subscribers of that event get called.
+
 **Events:** An event is a signal that is dispatched globally (by globally we mean wherever the Astral instance is available, not on the window object) so that the subscribers of it in all the modules can get notified. A signal can have a payload, which can be any object, function, boolean, or any other data type. Whatever is passed into the payload of the event, gets passed onto the subscriber callbacks as a parameter.
 
 Let’s see it working:
@@ -174,7 +175,9 @@ Astral.context uses the Astral.event’s event-driven nature at it’s base to t
 Let’s make sure we are clear about the terminologies here:
 
 **Store:** The store in Astral.context refers to a centralized location where you can store and manage the state of your application. It provides a structured way to store data and allows you to update and access the data from different parts of your application.
+
 **State:** In Astral.context, state refers to the data that represents the current state or condition of your application. It can include information such as user input, application settings, or any other relevant data. The state is stored in the store and can be updated and retrieved as needed.
+
 **Listener Callback:** A listener callback in Astral.context is a function that gets executed when the state changes. It is registered with a specific state in the store and is triggered whenever that state is updated. The listener callback allows you to respond to state changes and perform actions or update the user interface accordingly.
 
 ### Initializing and updating state
@@ -209,31 +212,31 @@ Astral.context provides a straightforward way to retrieve the current state from
 
 #### Retrieving State
 
-To retrieve the current value of a state, you can use the Astral.context.getState() function. It takes the state key as a parameter and returns an object with two properties: value and onchange.
+To retrieve the current value of a state, you can use the Astral.context.getState() function. It takes the state key as a parameter and returns a tuple with two properties: value and onchange.
 
 The value property contains the current value of the state in the store. You can access this property to retrieve the state value for your application's logic or display purposes.
 ```javascript  
 import Astral from "astral.js";
 
 // Retrieve the current state value
-const countState = Astral.context.getState("count");
+const [countState] = Astral.context.getState("count");
 
-console.log(countState.value); // Output: Current value of 'count' state
+console.log(countState); // Output: Current value of 'count' state
 ```
-In the example above, we retrieve the current value of the "count" state using `Astral.context.getState("count")`. We can then access the value property of the returned object to get the current state value.
+In the example above, we retrieve the current value of the "count" state using `Astral.context.getState("count")`. We can then access the value property which is at **0** index of the returned tuple to get the current state value.
 
 #### Listening to State Updates
 
-In addition to retrieving the state value, Astral.context allows you to set up listeners to react to state changes. The onchange property of the state object returned by `Astral.context.getState()` is a listener function. You can pass a callback function to this listener, which will be triggered whenever the respective state updates.
+In addition to retrieving the state value, Astral.context allows you to set up listeners to react to state changes. The onchange property of the state typle returned by `Astral.context.getState()` at index **1** is a listener function. You can pass a callback function to this listener, which will be triggered whenever the respective state updates.
 
 The callback function receives two parameters: previousState and newState. These parameters represent the previous state value and the updated state value, respectively. You can use them to compare the old and new state values and define your component's reaction to the state change.
 ```javascript  
 import Astral from "astral.js";
 
 // Set up a listener for state updates
-const countState = Astral.context.getState("count");
+const [countState, onCountStateChange] = Astral.context.getState("count");
 
-countState.onchange(function(previousState, newState) {
+onCountStateChange(function(previousState, newState) {
 	console.log("Previous state:", previousState);
 	console.log("New state:", newState);
 	// Perform actions based on state change
@@ -248,12 +251,12 @@ Let's see a complete example that demonstrates retrieving and listening to state
 import Astral from "astral.js";
 
 // Retrieve the current state value
-const countState = Astral.context.getState("count");
+const [countState, onCountStateChange] = Astral.context.getState("count");
 
-console.log(countState.value); // Output: Current value of 'count' state
+console.log(countState); // Output: Current value of 'count' state
 
 // Set up a listener for state updates
-countState.onchange(function(previousState, newState) {
+onCountStateChange(function(previousState, newState) {
 	console.log("Previous state:", previousState);
 	console.log("New state:", newState);
 	// Perform actions based on state change
@@ -449,7 +452,7 @@ When the library is loaded, a namespace named Astral is imported. It acts as a w
 
 ## Astral.context Interface
 
-### getState:
+### getState(key)
 
 Get the value of a state and a listener to track its changes.
 ```  
@@ -461,19 +464,19 @@ Astral.context.getState(key: string): { onchange: (callback: (prevState: any, ne
 
 #### Returns
 
-An object representing the state **value** with an **onchange** method.
+A tuple representing the state **value** with a **change listener** method.
 
 #### Example
 
 ```javascript
-var myState = Astral.context.getState("myState");
+const [myState, onMyStateChange] = Astral.context.getState("myState");
 
-myState.onchange(function(prevState, newState) {
+onMyStateChange(function(prevState, newState) {
     console.log(prevState, newState);
 });
 ```
 
-### updateState:
+### updateState(key | object, value)
 
 Update a state in the store. This triggers all the listeners that are subscribed to this state's updates.
 ```  
@@ -482,8 +485,8 @@ Astral.context.updateState(key: string, value: any): void
 
 #### Parameters
 
-- **key** (string): The key of the state to update.
-- **value** (*): The new value to set for the state.
+- **key** (string | object): If the key is an string, it should be the key of the state to update. If it's an object, it should an object containing key-value pairs of states to update.
+- **value** (*): The new value to set for the state. only applicable if the key is a string.
 
 #### Example
 
