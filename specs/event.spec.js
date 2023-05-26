@@ -106,4 +106,11 @@ describe('EventService', () => {
 
     debugLogSpy.mockRestore();
   });
+
+  it('should output debug logs when debug mode is on', () => {
+    eventService.setDebugMode(true);
+    const debugLogSpy = jest.spyOn(console, 'debug');
+    eventService.unsubscribe('event', function () {});
+    expect(debugLogSpy).toHaveBeenCalled();
+  });
 });
