@@ -6,62 +6,45 @@ To ensure a smooth collaboration and maintain a high-quality codebase, please fo
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
-    - [Installation](#installation)
-    - [Development Setup](#development-setup)
+- [Code of Conduct](#code-of-conduct)
+- [How to Contribute](#how-to-contribute)
 - [Contributing Guidelines](#contributing-guidelines)
     - [Bug Reports](#bug-reports)
     - [Feature Requests](#feature-requests)
 - [Code Style](#code-style)
 - [License](#license)
 
-## Getting Started
 
-### Installation
+Thank you for your interest in contributing to this project! We welcome contributions from everyone. Please read this document to understand the process for contributing.
 
-Before you start contributing to Astral.js, make sure you have it installed. You can install it using npm:
+## Code of Conduct
 
-```bash
-npm install astral.js
-```
+This project adheres to the [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/). By participating, you are expected to uphold this code. Please report any unacceptable behavior to the project maintainers.
 
-### Development Setup
+## How to Contribute
 
-To set up the development environment, follow these steps:To set up the development environment and start contributing, follow these steps:
+To contribute to this project, please follow these steps:
 
-1. Clone the Astral.js repository to your local machine:
+1. Make sure there is an internal branch associated with the issue you are working on. If the branch doesn't exist, create one.
+2. Fork this repository to your own GitHub account.
+3. Clone the forked repository to your local machine.
+4. Create a new branch from the internal branch for the specific issue you are working on.
+5. Implement your changes or fixes in the new branch.
+6. Make sure your code follows the project's code style and guidelines.
+7. Run the tests `npm run test` to ensure that your changes don't break any existing functionality.
+8. Run the formatter `npm run format` to ensure that your code is formatted correctly.
+9. Run the linter `npm run lint` to ensure that your code adheres to the project's code style.
+10. Run the build `npm run build` to ensure that your code builds successfully.
+11. Commit your changes with descriptive commit messages. (🤗 Emojis are appreciated!)
+12. Push the branch to your forked repository.
+13. Open a pull request (PR) from your branch to the internal branch associated with the issue.
+14. The PR will be reviewed by the project maintainers. Please be patient during the review process.
+15. Once the PR is approved, your changes will be merged into the internal feature branch.
+16. A new PR will be generated to merge the internal feature branch into the release-candidate branch.
+17. The features/fixes will undergo testing and pre-release tasks on the release-candidate branch.
+18. When the features/fixes are tested and ready to be released, a PR will be generated to merge the release-candidate branch into the main branch.
 
-    ```bash
-    git clone https://github.com/rabisnaqvi/Astral.js.git
-    ```
-2. Navigate to the project directory:
-    
-    ```bash
-    cd Astral.js
-    ```
-3. Install the dependencies:
-
-    ```bash
-    npm install
-    ```
-4. Create a new branch for your changes:
-    
-    ```bash
-    git checkout -b my-branch-name
-    ```
-5. Make your desired changes and ensure that the code passes all tests.
-6. Commit your changes with a descriptive commit message:  
-    ```bash
-    git commit -m "Add feature X"
-    ```
-7. Push your changes to the remote repository:
-    ```bash
-    git push origin my-branch-name
-    ```
-8. Go to the Astral.js repository on GitHub and create a new pull request from your branch.
-9. Provide a clear title and description for your pull request, explaining the purpose of the changes.
-10. Wait for the pull request to be reviewed and merged.
-11. Celebrate! 🎉
+Please note that the project maintainers may request further changes to the code before merging the PR. By submitting a PR, you confirm that you have the right to license your contribution under the project's license.
 
 
 ## Contributing Guidelines
@@ -93,8 +76,8 @@ If you have a suggestion for a new feature or improvement in Astral.js, we'd lov
 To maintain a consistent code style throughout the project, we use ESLint and Prettier. Before submitting a pull request, please ensure that your code adheres to the linting rules and passes all tests. You can run the following command to check your code:
 
 ```bash
-npm run lint
 npm run format
+npm run lint
 ```
 
 ## License
