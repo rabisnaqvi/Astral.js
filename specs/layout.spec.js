@@ -122,7 +122,7 @@ describe('LayoutService', () => {
 
   it('should return the current orientation', () => {
     const windowSpy = prepare();
-    windowSpy.mockReturnValueOnce({
+    windowSpy.mockReturnValue({
       innerWidth: 1920, // Mocked innerWidth value
       innerHeight: 1080, // Mocked innerHeight value
       screen: {
@@ -318,7 +318,7 @@ describe('LayoutService', () => {
   });
 
   it('should get current orientation from mql if window.screen.orientation is not supported', () => {
-    const windowSpy = prepare();
+    prepare();
     var temp = global.window;
     global.customWindow = Object.create(window);
     Object.defineProperty(global, 'window', {
@@ -327,16 +327,18 @@ describe('LayoutService', () => {
     });
     Object.defineProperty(window, 'matchMedia', {
       writable: true,
-      value: jest.fn().mockReturnValue({
-        matches: false,
-        media: '',
-        onchange: null,
-        addListener: jest.fn(),
-        removeListener: jest.fn(),
-        addEventListener: jest.fn(),
-        removeEventListener: jest.fn(),
-        dispatchEvent: jest.fn(),
-      }),
+      value: (query) => {
+        return {
+          matches: false,
+          media: query,
+          onchange: null,
+          addListener: jest.fn(),
+          removeListener: jest.fn(),
+          addEventListener: jest.fn(),
+          removeEventListener: jest.fn(),
+          dispatchEvent: jest.fn(),
+        };
+      },
     });
     expect(LayoutService.getOrientation()).toEqual('landscape');
     Object.defineProperty(global, 'window', {
@@ -346,7 +348,7 @@ describe('LayoutService', () => {
   });
 
   it('should get current orientation from mql if window.screen.orientation is not supported', () => {
-    const windowSpy = prepare();
+    prepare();
     var temp = global.window;
     global.customWindow = Object.create(window);
     Object.defineProperty(global, 'window', {
@@ -355,16 +357,18 @@ describe('LayoutService', () => {
     });
     Object.defineProperty(window, 'matchMedia', {
       writable: true,
-      value: jest.fn().mockReturnValue({
-        matches: true,
-        media: '',
-        onchange: null,
-        addListener: jest.fn(),
-        removeListener: jest.fn(),
-        addEventListener: jest.fn(),
-        removeEventListener: jest.fn(),
-        dispatchEvent: jest.fn(),
-      }),
+      value: (query) => {
+        return {
+          matches: true,
+          media: query,
+          onchange: null,
+          addListener: jest.fn(),
+          removeListener: jest.fn(),
+          addEventListener: jest.fn(),
+          removeEventListener: jest.fn(),
+          dispatchEvent: jest.fn(),
+        };
+      },
     });
     expect(LayoutService.getOrientation()).toEqual('portrait');
     Object.defineProperty(global, 'window', {
@@ -381,13 +385,17 @@ describe('LayoutService', () => {
       value: global.customWindow,
       writable: true,
     });
-    Object.defineProperty(window, 'matchMedia', {
+    Object.defineProperty(global, 'matchMedia', {
       writable: true,
       value: false,
     });
-    expect(() => {
+    let thrownError;
+    try {
       LayoutService.getOrientation();
-    }).toThrow(Error('Astral.layout: No orientation found'));
+    } catch (error) {
+      thrownError = error;
+    }
+    expect(thrownError.message).toMatch('Astral.layout: No orientation found.');
     Object.defineProperty(global, 'window', {
       value: temp,
       writable: true,

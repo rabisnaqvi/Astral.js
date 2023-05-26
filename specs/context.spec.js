@@ -1,4 +1,4 @@
-import ContextService from './../src/context.js';
+import ContextService from './../src/context';
 
 describe('ContextService', () => {
   beforeEach(() => {
@@ -78,5 +78,19 @@ describe('ContextService', () => {
 
     expect(state1value).toBe(stateValue1);
     expect(state2value).toBe(stateValue2);
+  });
+
+  it('should output debug logs when debug mode is on', () => {
+    ContextService.setDebugMode(true);
+    const debugLogSpy = jest.spyOn(console, 'debug');
+    ContextService.updateState('myState', 'myValue');
+    expect(debugLogSpy).toHaveBeenCalled();
+  });
+
+  it('should not output debug logs when debug mode is off', () => {
+    ContextService.setDebugMode(false);
+    const debugLogSpy = jest.spyOn(console, 'debug');
+    ContextService.updateState('myState', 'myValue');
+    expect(debugLogSpy).not.toHaveBeenCalled();
   });
 });
