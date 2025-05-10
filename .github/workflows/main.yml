@@ -63,6 +63,6 @@ jobs:
         run: npm run docs
         
       - name: Upload coverage to Coveralls
-        uses: coverallsapp/github-action@v3
+        uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
