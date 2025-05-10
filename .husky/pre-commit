@@ -1,0 +1,1 @@
+npm run lint && npm test && npm run build:prod && git add dist/astral.min.js dist/astral.min.js.map dist/stats.json

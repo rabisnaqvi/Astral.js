@@ -1,0 +1,1159 @@
+{
+  "hash": "c0e7b89b00008a67217a",
+  "version": "5.99.8",
+  "time": 68,
+  "builtAt": 1746872570333,
+  "publicPath": "auto",
+  "outputPath": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/dist",
+  "assetsByChunkName": {
+    "main": [
+      "astral.min.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "astral.min.js",
+      "size": 4983,
+      "emitted": false,
+      "comparedForEmit": true,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true,
+        "related": {
+          "sourceMap": "astral.min.js.map"
+        },
+        "size": 4983
+      },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 0,
+      "related": [
+        {
+          "type": "sourceMap",
+          "name": "astral.min.js.map",
+          "size": 32581,
+          "emitted": false,
+          "comparedForEmit": true,
+          "cached": false,
+          "info": {
+            "development": true,
+            "size": 32581
+          },
+          "chunkNames": [],
+          "chunkIdHints": [],
+          "auxiliaryChunkNames": [
+            "main"
+          ],
+          "auxiliaryChunkIdHints": [],
+          "related": [],
+          "chunks": [],
+          "auxiliaryChunks": [
+            792
+          ],
+          "isOverSizeLimit": false
+        }
+      ],
+      "chunks": [
+        792
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": false,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 23847,
+      "sizes": {
+        "javascript": 23177,
+        "runtime": 670
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "astral.min.js"
+      ],
+      "auxiliaryFiles": [
+        "astral.min.js.map"
+      ],
+      "hash": "a4a7ed244767f6033641",
+      "childrenByOrder": {},
+      "id": 792,
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./src/index.ts"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/esm",
+      "layer": null,
+      "size": 23177,
+      "sizes": {
+        "javascript": 23177
+      },
+      "built": false,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": true,
+      "identifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts|1151fe4eb383726f29617674afe5f5a5",
+      "name": "./src/index.ts + 3 modules",
+      "nameForCondition": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 3,
+      "postOrderIndex": 3,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 52,
+      "chunks": [
+        792
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./src/index.ts",
+          "loc": "main",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": null,
+          "active": true,
+          "explanation": "used as library export",
+          "userRequest": null,
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "context",
+        "default",
+        "event",
+        "layout"
+      ],
+      "optimizationBailout": [],
+      "depth": 0,
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 318,
+          "sizes": {
+            "javascript": 318
+          },
+          "built": false,
+          "codeGenerated": false,
+          "buildTimeExecuted": false,
+          "cached": true,
+          "identifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "name": "./src/index.ts",
+          "nameForCondition": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 3,
+          "postOrderIndex": 3,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": null,
+          "issuerId": null,
+          "chunks": [],
+          "assets": [],
+          "reasons": [],
+          "usedExports": true,
+          "providedExports": [
+            "context",
+            "default",
+            "event",
+            "layout"
+          ],
+          "optimizationBailout": [],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 5423,
+          "sizes": {
+            "javascript": 5423
+          },
+          "built": false,
+          "codeGenerated": false,
+          "buildTimeExecuted": false,
+          "cached": true,
+          "identifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/event.ts",
+          "name": "./src/event.ts",
+          "nameForCondition": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/event.ts",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "issuerName": "./src/index.ts",
+          "issuerPath": [
+            {
+              "identifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "name": "./src/index.ts",
+              "id": null
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": null,
+          "issuerId": null,
+          "chunks": [],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+              "module": "./src/context.ts",
+              "moduleName": "./src/context.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+              "resolvedModule": "./src/context.ts",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./event",
+              "loc": "1:0-28",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+              "module": "./src/context.ts",
+              "moduleName": "./src/context.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+              "resolvedModule": "./src/context.ts",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./event",
+              "loc": "19:16-31",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+              "module": "./src/context.ts",
+              "moduleName": "./src/context.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+              "resolvedModule": "./src/context.ts",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./event",
+              "loc": "75:16-29",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./event",
+              "loc": "1:0-28",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./event",
+              "loc": "6:19-24",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./event",
+              "loc": "8:21-26",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+              "module": "./src/layout.ts",
+              "moduleName": "./src/layout.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+              "resolvedModule": "./src/layout.ts",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./event",
+              "loc": "1:0-28",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+              "module": "./src/layout.ts",
+              "moduleName": "./src/layout.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+              "resolvedModule": "./src/layout.ts",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./event",
+              "loc": "79:12-25",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+              "module": "./src/layout.ts",
+              "moduleName": "./src/layout.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+              "resolvedModule": "./src/layout.ts",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./event",
+              "loc": "83:12-25",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+              "module": "./src/layout.ts",
+              "moduleName": "./src/layout.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+              "resolvedModule": "./src/layout.ts",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./event",
+              "loc": "86:12-27",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+              "module": "./src/layout.ts",
+              "moduleName": "./src/layout.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+              "resolvedModule": "./src/layout.ts",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./event",
+              "loc": "90:12-27",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [
+            "default"
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 13863,
+          "sizes": {
+            "javascript": 13863
+          },
+          "built": false,
+          "codeGenerated": false,
+          "buildTimeExecuted": false,
+          "cached": true,
+          "identifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+          "name": "./src/layout.ts",
+          "nameForCondition": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "issuerName": "./src/index.ts",
+          "issuerPath": [
+            {
+              "identifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "name": "./src/index.ts",
+              "id": null
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": null,
+          "issuerId": null,
+          "chunks": [],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./layout",
+              "loc": "2:0-30",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./layout",
+              "loc": "6:42-48",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./layout",
+              "loc": "8:37-43",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [
+            "default"
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 3573,
+          "sizes": {
+            "javascript": 3573
+          },
+          "built": false,
+          "codeGenerated": false,
+          "buildTimeExecuted": false,
+          "cached": true,
+          "identifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+          "name": "./src/context.ts",
+          "nameForCondition": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+          "index": 3,
+          "preOrderIndex": 3,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "issuerName": "./src/index.ts",
+          "issuerPath": [
+            {
+              "identifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "name": "./src/index.ts",
+              "id": null
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": null,
+          "issuerId": null,
+          "chunks": [],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./context",
+              "loc": "3:0-32",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./context",
+              "loc": "6:67-74",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./context",
+              "loc": "8:55-62",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [
+            "default"
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 5423,
+      "sizes": {
+        "javascript": 5423
+      },
+      "built": false,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": true,
+      "identifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/event.ts",
+      "name": "./src/event.ts",
+      "nameForCondition": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/event.ts",
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+      "issuerName": "./src/index.ts",
+      "issuerPath": [
+        {
+          "identifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "name": "./src/index.ts",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+          "module": "./src/context.ts",
+          "moduleName": "./src/context.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+          "resolvedModule": "./src/context.ts",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./event",
+          "loc": "1:0-28",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+          "module": "./src/context.ts",
+          "moduleName": "./src/context.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+          "resolvedModule": "./src/context.ts",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./event",
+          "loc": "19:16-31",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+          "module": "./src/context.ts",
+          "moduleName": "./src/context.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+          "resolvedModule": "./src/context.ts",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./event",
+          "loc": "75:16-29",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./event",
+          "loc": "1:0-28",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./event",
+          "loc": "6:19-24",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./event",
+          "loc": "8:21-26",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+          "module": "./src/layout.ts",
+          "moduleName": "./src/layout.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+          "resolvedModule": "./src/layout.ts",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./event",
+          "loc": "1:0-28",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+          "module": "./src/layout.ts",
+          "moduleName": "./src/layout.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+          "resolvedModule": "./src/layout.ts",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./event",
+          "loc": "79:12-25",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+          "module": "./src/layout.ts",
+          "moduleName": "./src/layout.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+          "resolvedModule": "./src/layout.ts",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./event",
+          "loc": "83:12-25",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+          "module": "./src/layout.ts",
+          "moduleName": "./src/layout.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+          "resolvedModule": "./src/layout.ts",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./event",
+          "loc": "86:12-27",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+          "module": "./src/layout.ts",
+          "moduleName": "./src/layout.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+          "resolvedModule": "./src/layout.ts",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./event",
+          "loc": "90:12-27",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [
+        "default"
+      ],
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 13863,
+      "sizes": {
+        "javascript": 13863
+      },
+      "built": false,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": true,
+      "identifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+      "name": "./src/layout.ts",
+      "nameForCondition": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/layout.ts",
+      "index": 2,
+      "preOrderIndex": 2,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+      "issuerName": "./src/index.ts",
+      "issuerPath": [
+        {
+          "identifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "name": "./src/index.ts",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./layout",
+          "loc": "2:0-30",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./layout",
+          "loc": "6:42-48",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./layout",
+          "loc": "8:37-43",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [
+        "default"
+      ],
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 3573,
+      "sizes": {
+        "javascript": 3573
+      },
+      "built": false,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": true,
+      "identifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+      "name": "./src/context.ts",
+      "nameForCondition": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/context.ts",
+      "index": 3,
+      "preOrderIndex": 3,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+      "issuerName": "./src/index.ts",
+      "issuerPath": [
+        {
+          "identifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "name": "./src/index.ts",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./context",
+          "loc": "3:0-32",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./context",
+          "loc": "6:67-74",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/node_modules/ts-loader/index.js??ruleSet[1].rules[0].use[0]!/Users/rabisnaqvi_xt/workspaces/personal/Astral.js/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./context",
+          "loc": "8:55-62",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [
+        "default"
+      ],
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": true,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        792
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": true,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        792
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": true,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        792
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    }
+  ],
+  "entrypoints": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        792
+      ],
+      "assets": [
+        {
+          "name": "astral.min.js",
+          "size": 4983
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 4983,
+      "auxiliaryAssets": [
+        {
+          "name": "astral.min.js.map",
+          "size": 32581
+        }
+      ],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 32581,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        792
+      ],
+      "assets": [
+        {
+          "name": "astral.min.js",
+          "size": 4983
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 4983,
+      "auxiliaryAssets": [
+        {
+          "name": "astral.min.js.map",
+          "size": 32581
+        }
+      ],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 32581,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0
+}

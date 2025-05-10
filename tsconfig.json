@@ -2,11 +2,31 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
-    "module": "es6",
-    "target": "es6",
+    "module": "ESNext",
+    "target": "ESNext",
     "allowJs": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": false,
+    "sourceMap": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./dist/.tsbuildinfo",
+    "isolatedModules": true
   },
+  "exclude": [
+    "specs/**/*",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "coverage/**/*",
+    "**/*.config.ts",
+    "**/*.conf.ts",
+    "webpack.conf.ts",
+    "jest.config.ts",
+    "babel.config.ts"
+  ],
   "typedocOptions": {
     "entryPoints": ["src/index.ts"],
     "out": "docs"

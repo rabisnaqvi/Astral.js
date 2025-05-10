@@ -2,3 +2,4 @@ node_modules/
 dist/
 coverage/
 !src/
+webpack.conf.js
