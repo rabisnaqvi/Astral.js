@@ -44,7 +44,11 @@ jobs:
             
       - name: Install dependencies
         run: |
-          npm install -g npm@latest
+          if [ "${{ matrix.node }}" = "20" ]; then
+            npm install -g npm@latest
+          else
+            npm install -g npm@10.8.2
+          fi
           npm ci
           
       - name: Lint
