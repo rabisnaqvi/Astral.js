@@ -18,6 +18,7 @@ jobs:
         with:
           ruby-version: '3.0'
           bundler-cache: true
+          working-directory: docs
 
       - name: Setup Node
         uses: actions/setup-node@v2
@@ -25,11 +26,13 @@ jobs:
           node-version: '16'
 
       - name: Install Dependencies
+        working-directory: docs
         run: |
           gem install bundler
           bundle install
 
       - name: Build
+        working-directory: docs
         run: bundle exec jekyll build --baseurl "${{ github.repository }}"
 
       - name: Deploy to GitHub Pages
@@ -37,14 +40,14 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
-          folder: _site
+          folder: docs/_site
 
       - name: Deploy to Preview
         if: github.event_name == 'pull_request'
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages-preview-${{ github.event.pull_request.number }}
-          folder: _site
+          folder: docs/_site
           clean: true
           clean-exclude: |
             .git
