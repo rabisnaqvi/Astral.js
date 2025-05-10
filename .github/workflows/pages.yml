@@ -46,7 +46,7 @@ jobs:
         with:
           branch: gh-pages
           folder: docs/_site
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Deploy to Preview
         if: github.event_name == 'pull_request'
@@ -59,4 +59,4 @@ jobs:
             .git
             .github
             .gitignore
-          token: ${{ secrets.GITHUB_TOKEN }} 
+          token: ${{ secrets.PAT_TOKEN }} 
