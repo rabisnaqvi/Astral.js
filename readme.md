@@ -1,5 +1,6 @@
 # ![Astral Icon](https://github.com/rabisnaqvi/Astral.js/blob/main/assets/astral-icon.png) Astral.js
 
+<!-- Test CI Pipeline -->
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 [![npm](https://img.shields.io/npm/v/astral.js.svg)](https://www.npmjs.com/package/astral.js)
 [![Coverage Status](https://coveralls.io/repos/github/rabisnaqvi/Astral.js/badge.svg?branch=main)](https://coveralls.io/github/rabisnaqvi/Astral.js?branch=main)
@@ -48,11 +49,11 @@ Or use a CDN:
 
 # Getting Started
 
-After making sure that Astral.js is available in modules, we can start looking into how we can actually use it. But before we dive into the code, it’s a good measure to take a look at the [Core Concepts](#core-concepts) section of the documentation if you haven’t done already or are not up to date with the recent updates in the features. Once you are confident about your knowledge of the core concepts, we can dive into the practical usage of Astral.js.
+After making sure that Astral.js is available in modules, we can start looking into how we can actually use it. But before we dive into the code, it's a good measure to take a look at the [Core Concepts](#core-concepts) section of the documentation if you haven't done already or are not up to date with the recent updates in the features. Once you are confident about your knowledge of the core concepts, we can dive into the practical usage of Astral.js.
 
 Here we are going to divide the usage into 3 different sections, covering the use of the Event, Context, and Layout functionalities respectively.
 
-Let’s look into Astral.event functionality first:
+Let's look into Astral.event functionality first:
 
 ## Astral.event
 
@@ -60,13 +61,13 @@ The Astral.event namespace, provides you with functionality to create scalable, 
 
 At its core Astral.event is a utility, that provides the ability for you to subscribe callback functions to certain events, and to trigger those events.
 
-Let’s make sure we are clear about the terminologies here:
+Let's make sure we are clear about the terminologies here:
 
 **Subscribers:** These are the callback functions that listen for a specific event to be triggered in the application. Once that event is triggered, the subscribers of that event get called.
 
 **Events:** An event is a signal that is dispatched globally (by globally we mean wherever the Astral instance is available, not on the window object) so that the subscribers of it in all the modules can get notified. A signal can have a payload, which can be any object, function, boolean, or any other data type. Whatever is passed into the payload of the event, gets passed onto the subscriber callbacks as a parameter.
 
-Let’s see it working:
+Let's see it working:
 
 ### Publishing Events
 
@@ -162,17 +163,17 @@ When debug mode is turned on `(Astral.event.setDebugMode(true))`, Astral.event w
 
 It's recommended to disable debug mode in production (`Astral.event.setDebugMode(false)`) to avoid unnecessary console output and performance overhead.
 
-That's it! You now have an understanding of how to publish events, subscribe to events with callback functions, unsubscribe from events, and enable debug mode for event handling using Astral.event. Let’s head over to Astral.context’s state management magic ✨
+That's it! You now have an understanding of how to publish events, subscribe to events with callback functions, unsubscribe from events, and enable debug mode for event handling using Astral.event. Let's head over to Astral.context's state management magic ✨
 
 ## Astral.context
 
-The Astral.context namespace, provides you with functionality to create state-based reactive applications. This is the a toolkit that helps you streamline your application’s state, and have various components react to a state change, without having to pass around the references to anything.
+The Astral.context namespace, provides you with functionality to create state-based reactive applications. This is the a toolkit that helps you streamline your application's state, and have various components react to a state change, without having to pass around the references to anything.
 
 At its core Astral.context is a utility, that provides the ability for you to store your application state, update it, get the values from the application store, and react to it when a application state updates.
 
-Astral.context uses the Astral.event’s event-driven nature at it’s base to trigger state listener callbacks.
+Astral.context uses the Astral.event's event-driven nature at it's base to trigger state listener callbacks.
 
-Let’s make sure we are clear about the terminologies here:
+Let's make sure we are clear about the terminologies here:
 
 **Store:** The store in Astral.context refers to a centralized location where you can store and manage the state of your application. It provides a structured way to store data and allows you to update and access the data from different parts of your application.
 
