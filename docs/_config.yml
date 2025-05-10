@@ -1,0 +1,71 @@
+theme: jekyll-theme-minimal
+title: Astral.js Documentation
+description: Documentation for Astral.js - A lightweight UI toolkit for building modern user interfaces
+baseurl: "/Astral.js"
+url: "https://rabisnaqvi.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - .git
+  - .github
+
+# Collections
+collections:
+  getting-started:
+    output: true
+  core-concepts:
+    output: true
+  api-reference:
+    output: true
+  examples:
+    output: true
+  troubleshooting:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "getting-started"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "core-concepts"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "api-reference"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "examples"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "troubleshooting"
+    values:
+      layout: "default"
+
+# Navigation
+nav_order:
+  - getting-started
+  - core-concepts
+  - api-reference
+  - examples
+  - troubleshooting 
