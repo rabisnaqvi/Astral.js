@@ -43,13 +43,7 @@ jobs:
             ${{ runner.os }}-modules-
             
       - name: Install dependencies
-        run: |
-          if [ "${{ matrix.node }}" = "20" ]; then
-            npm install -g npm@latest
-          else
-            npm install -g npm@10.8.2
-          fi
-          npm ci
+        run: npm ci
           
       - name: Lint
         run: npm run lint
